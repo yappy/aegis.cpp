@@ -192,7 +192,7 @@ namespace std
 template <>
 struct hash<aegis::snowflake>
 {
-    std::size_t operator()(const aegis::snowflake& k) const
+    std::size_t operator()(const aegis::snowflake& k) const noexcept
     {
         return hash<int64_t>()(k.get());
     }
