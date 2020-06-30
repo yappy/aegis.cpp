@@ -229,7 +229,7 @@ inline std::string random_string(const std::size_t length)
     std::string temp;
     temp.reserve(length);
 
-    for (int i = 0; i < length; ++i)
+    for (std::size_t i = 0; i < length; ++i)
         temp.push_back(random_letter());
 
     return temp;
