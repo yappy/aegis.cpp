@@ -55,12 +55,12 @@ struct presence
 };
 
 /// \cond TEMPLATES
-inline void from_json(const nlohmann::json& j, presence& m)
+inline void from_json(const nlohmann::json& j, presence& m) noexcept
 {
 
 }
 
-inline void to_json(nlohmann::json& j, const presence& m)
+inline void to_json(nlohmann::json& j, const presence& m) noexcept
 {
 
 }
